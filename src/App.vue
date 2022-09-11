@@ -19,6 +19,7 @@
               <el-menu-item index="/">Home</el-menu-item>
               <el-menu-item index="/about">About</el-menu-item>
               <el-menu-item index="/element">Element</el-menu-item>
+              <el-menu-item index="/FormPage">Form Page</el-menu-item>
             </el-menu-item-group>
             <el-submenu index="1-4">
               <template slot="title">选项4</template>
