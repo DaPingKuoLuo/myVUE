@@ -5,14 +5,17 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import VCharts from 'vue-echarts'
 import axios from 'axios'
+import store from './store'
 Vue.prototype.$http = axios //正确的使用
 axios.defaults.baseURL = '/io'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI);
-new Vue({
+
+const vm = new Vue({
   el: '#app',
   router,
-  render: h => h(App)
+  render: h => h(App),
+  store,
 }).$mount('#app')
 Vue.component('v-chart', VCharts)

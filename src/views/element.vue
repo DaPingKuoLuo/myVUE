@@ -87,6 +87,9 @@ export default {
       })
     }
   },
+  mounted(){
+    console.log('elementApp',this)
+  },
 }
 
 </script>
