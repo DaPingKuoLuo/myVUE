@@ -21,12 +21,12 @@ const routes = [
   {
     path: '/element',
     name: 'element',
-    component: ()=>import('@/views/Element')
+    component: () => import('@/views/Element')
   },
   {
     path: '/FormPage',
     name: 'FormPage',
-    component: ()=>import('@/views/FormPage')
+    component: () => import('@/views/FormPage')
   },
   {
     path: '/map',
@@ -37,6 +37,15 @@ const routes = [
     path: '/layout',
     name: 'layout',
     component: () => import('@/views/Layout')
+  },
+  {
+    path: '/message',
+    name: 'message',
+    component: () => import('@/views/Message'),
+    children: [
+      { path: '/m_1', name: 'm_1', component: () => import('@/components/M_1') },
+      { path: '/m_2', name: 'm_2', component: () => import('@/components/M_2') },
+    ]
   },
 ]
 

@@ -22,6 +22,7 @@
               <el-menu-item index="/FormPage">Form Page</el-menu-item>
               <el-menu-item index="/Map">Map Page</el-menu-item>
               <el-menu-item index="/layout">Layout Page</el-menu-item>
+              <el-menu-item index="/message">Message Page</el-menu-item>
             </el-menu-item-group>
             <el-submenu index="1-4">
               <template slot="title">选项4</template>
@@ -56,9 +57,6 @@
 <script>
 export default {
   name:'APP',
-  mounted(){
-    console.log('App',this)
-  },
   methods: {
     handleOpen(key, keyPath) {
       console.log(key, keyPath);
