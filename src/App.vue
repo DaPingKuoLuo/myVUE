@@ -4,7 +4,7 @@
       <el-col :span="4">
         <h5 style="text-align: center">导航栏</h5>
         <el-menu
-          default-active="/"
+          :default-active="$route.path"
           class="el-menu-vertical-demo"
           @open="handleOpen"
           @close="handleClose"
@@ -23,6 +23,7 @@
               <el-menu-item index="/Map">Map Page</el-menu-item>
               <el-menu-item index="/layout">Layout Page</el-menu-item>
               <el-menu-item index="/message">Message Page</el-menu-item>
+              <el-menu-item index="/vueBase">VueBase Page</el-menu-item>
             </el-menu-item-group>
             <el-submenu index="1-4">
               <template slot="title">选项4</template>

@@ -39,6 +39,11 @@ const routes = [
     component: () => import('@/views/Layout')
   },
   {
+    path: '/vueBase',
+    name: 'vueBase',
+    component: () => import('@/views/VueBase')
+  },
+  {
     path: '/message',
     name: 'message',
     component: () => import('@/views/Message'),

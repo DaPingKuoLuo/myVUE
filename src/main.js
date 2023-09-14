@@ -12,7 +12,7 @@ axios.defaults.baseURL = '/io'
 Vue.config.productionTip = false
 Vue.use(ElementUI);
 
-const vm = new Vue({
+new Vue({
   el: '#app',
   router,
   render: h => h(App),
